@@ -10,7 +10,7 @@ export async function run(provider: NetworkProvider) {
     const lpAccount_code = await compile('lp_account');
     const lpWallet_code = await compile('lp_wallet');
 
-    const minter = provider.open(
+    const router = provider.open(
         Router.createFromConfig(
             {
                 isLocked: isLocked,
@@ -23,5 +23,7 @@ export async function run(provider: NetworkProvider) {
         )
     );
 
-    await minter.sendDeploy(provider.sender(), toNano('0.05'));
+    await router.sendDeploy(provider.sender(), toNano('0.05'));
+
+    await provider.waitForDeploy(router.address);
 }
