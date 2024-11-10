@@ -1,3 +1,4 @@
+build
 build/*.fif
 build/*.cell
 node_modules
@@ -8,3 +9,5 @@ bin
 .vs_code
 /.idea
 .DS_Store
+yarn*
+.p*

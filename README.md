@@ -15,16 +15,13 @@ It was built from tag [v1.0.0](https://github.com/ston-fi/dex-core/releases/tag/
 The following assumes the use of `node@>=16`.
 
 ### Install Dependencies
-`npm install`
+`yarn install`
 
 ### Compile Contracts
-`npm run build`
-
-### Run Tests
-`npm run test`
+`yarn build`
 
 ### Deploy Contracts
-`npm run deploy`
+`yarn deploy`
 
 ## Security
 This repository is subject to STON.fi bug bounty program, see [here](https://github.com/ston-fi/bug-bounty) for more info.
